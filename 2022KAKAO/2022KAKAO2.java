@@ -1,3 +1,4 @@
+//k진수에서 소수 개수 구하기
 class Solution {
 	public int solution(int n, int k) {
 		int answer = 0;
