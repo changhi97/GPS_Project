@@ -1,3 +1,4 @@
+//신고결과받기
 import java.util.ArrayList;
 import java.util.HashMap;
 
