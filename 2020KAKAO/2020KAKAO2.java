@@ -21,25 +21,12 @@ class Solution {
 	int[] dy = { 0, 1, 0, -1 };// 우로가면 1, 좌로가면 -1
 
 	public int solution(int[][] board) {
-		boolean[][] v = new boolean[board.length][board.length];
-		int[][] temp = board.clone();
-		BFS(temp, v);
-		for(int[] i : temp) {
-			for(int j: i) {
-				System.out.print(j+"\t");
-			}
-			System.out.println();
-		}
-		System.out.println("\n\n");
+		//boolean[][] v = new boolean[board.length][board.length];
+		//int[][] temp = board.clone();
+		//BFS(temp, v);//방문을 2차원 배열로 하면 값이 역전되는 상황이 발생할수도 있어 3차원 배열로 방향별로 판단해야한다 
 		boolean[][][] v2 = new boolean[board.length][board.length][4];
 		int[][] temp2 = board.clone();
 		BFS2(temp2, v2);
-		for(int[] i : temp2) {
-			for(int j: i) {
-				System.out.print(j+"\t");
-			}
-			System.out.println();
-		}
 		return answer;
 	}
 
