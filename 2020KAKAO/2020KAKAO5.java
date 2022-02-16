@@ -1,4 +1,4 @@
-//ÀÚ¹°¼è¿Í ¿­¼è
+//ìë¬¼ì‡ ì™€ ì—´ì‡ 
 class Solution {
 	public boolean solution(int[][] key, int[][] block) {
 		int len = block.length + (key.length * 2);
